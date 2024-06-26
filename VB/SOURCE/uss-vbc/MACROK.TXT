@@ -1,0 +1,25 @@
+Visual Basic Source Code...Macro Killer
+What to do...
+
+Make one (1) Command Button...
+
+In that Command Button type the following code...
+Dim AOL As Integer
+Dim Room2 As Integer
+Dim Cedit  As Integer
+Dim Q As Integer
+Dim P As Integer
+Dim R As Integer
+Dim WhatToSend As String
+Dim x As Integer
+For x = 1 To 3 Step 1
+AOL% = FindWindow("AOL Frame25", 0&)
+Room2% = FindChatWnd()
+Cedit% = FindChildByClass(Room2%, "_AOL_EDIT")
+WhatToSend$ = "@@@@@@@@@@@@@ @@@@@@@@@@@@@ @@@@@@@@@@@@@ @@@@@@@@@@@@@  °•Destiny•°® @@@@@@@@@@@@@ "
+Q% = SendMessageByString(Cedit%, WM_SetText, 0, WhatToSend$)
+timeout (.001)
+Q% = SendMessageByNum(Cedit%, WM_CHAR, 13, 0)
+timeout (.001)
+Next x
+Summary:You need Master2.bas for this to work.

@@ -1,0 +1,16 @@
+Dim numim, msg
+numim = text3
+For sendim = 1 To numim
+AppActivate "America Online"
+SendKeys "^i"
+SendKeys ("" + text1.Text + "")
+SendKeys ("{enter}")
+SendKeys "{tab}"
+SendKeys ("" + Text2.Text + "")
+SendKeys ("{enter}")
+SendKeys ">"
+SendKeys "{tab}"
+SendKeys " "
+Call timeout(2)
+Next sendim
+

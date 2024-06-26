@@ -1,0 +1,7 @@
+<HTML><PRE><FONT  COLOR="#000000" SIZE=3>sill$ = "your message here"
+aol% = FindWindow("AOL Frame25", 0&)
+chatlist% = FindChildByClass(aol%, "_AOL_Edit")
+SendNow% = SendMessageByString(chatlist%, WM_SETTEXT, 0, sill$)
+x% = SendMessageByNum(chatlist%, WM_CHAR, 13, 0)
+
+</PRE></HTML>

@@ -1,0 +1,64 @@
+'*********This block checks to make sure you're online*******
+'*        This won't work if one of your programs removed
+'*        The welcome screen!!!
+
+a = FindWindow("AOL Frame25", 0&) 'find the aol window
+If a = 0 Then             'If we can't find it, then quit
+    MsgBox "AOL isn't running", 48, "Error"
+    Exit Sub
+End If
+
+b = findchildbytitle(a, "Welcome") 'Find the Welcome window
+If b = 0 Then  'NO Welcome screen was found
+    MsgBox "Not signed on", 48, "Error"
+    Exit Sub
+End If
+If c <> 0 Then 'We found the combobox, the sign on screen is showing
+                ' We are not online!
+    MsgBox "Not Signed on", 48, "Error"
+    Exit Sub
+End If
+
+'
+Dim AOL%, MDI%, List%, Edith%, View%, Iconn%, Childhandle%
+Dim bb As Integer
+AOL% = FindWindow("AOL Frame25", 0&)
+MDI% = FindChildByClass(AOL%, "MDIClient")
+bb = 0
+Childhandle% = GetWindow(MDI%, GW_CHILD)
+View% = FindChildByClass(Childhandle%, "_AOL_VIEW")
+If View% <> 0 Then Let bb = bb + 1
+Iconn% = FindChildByClass(Childhandle%, "_AOL_ICON")
+If Iconn% <> 0 Then Let bb = bb + 1
+Edith% = FindChildByClass(Childhandle%, "_AOL_Edit")
+If Edith% <> 0 Then Let bb = bb + 1
+List% = FindChildByClass(Childhandle%, "_AOL_LISTbox")
+If List% <> 0 Then Let bb = bb + 1
+If bb = 4 Then
+GoTo RANGER766
+End If
+If Childhandle% = 0 Then
+MsgBox "Not In A Chat Room", 16, "Error"
+Exit Sub
+End If
+poop766:
+bb = 0
+Childhandle% = GetWindow(Childhandle%, GW_HWNDNEXT)
+View% = FindChildByClass(Childhandle%, "_AOL_VIEW")
+If View% <> 0 Then Let bb = bb + 1
+Iconn% = FindChildByClass(Childhandle%, "_AOL_ICON")
+If Iconn% <> 0 Then Let bb = bb + 1
+Edith% = FindChildByClass(Childhandle%, "_AOL_Edit")
+If Edith% <> 0 Then Let bb = bb + 1
+List% = FindChildByClass(Childhandle%, "_AOL_LISTBOX")
+If List% <> 0 Then Let bb = bb + 1
+If bb = 4 Then
+GoTo RANGER766
+End If
+If Childhandle% = 0 Then
+MsgBox "Not In A Chat Room", 16, "Error"
+Exit Sub
+End If
+GoTo poop766
+RANGER766:
+

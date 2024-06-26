@@ -1,0 +1,1227 @@
+Subj:	VB codez
+Date:	97-06-08 11:04:27 EDT
+From:	OoLoReoO
+BCC:	CoolSwoosh
+
+«‹- -–|[¤ Fate X 2.5 Mass Mailer By MaGuS ¤]|–-- -›»
+            «‹- -–|[¤ Mail 6 of 29 ¤]|–-- -›»
+          «‹- -–|[¤ 20% Transfered ¤]|–-- -›»
+
+Here if I ever need help I already gave you something?
+-----------------
+Forwarded Message: 
+Subj:	Fwd: VB codez
+Date:	97-06-08 10:25:13 EDT
+From:	Carrera83
+To:	OoLoReoO
+
+
+-----------------
+Forwarded Message: 
+Subj:	Fwd: VB codez
+Date:	97-06-03 04:28:05 EDT
+From:	CrazyNinja
+To:	Carrera83
+
+
+-----------------
+Forwarded Message: 
+Subj:	Fwd: VB codez
+Date:	97-06-01 22:55:46 EDT
+From:	CrazyNinja
+To:	CrazyNinja
+
+
+-----------------
+Forwarded Message: 
+Subj:	Fwd: VB codez
+Date:	97-05-31 00:33:26 EDT
+From:	CrazyNinja
+To:	RadarLafty
+
+
+-----------------
+Forwarded Message: 
+Subj:	VB codez
+Date:	97-05-29 16:48:36 EDT
+From:	Luc Dust
+To:	CrazyNinja
+
+Sub Command3D1_Click ()
+ AppActivate "america  online"
+ SendKeys "<<-x-X-x-X-x-=ATTENTION=-x-X-x-X-x->>"
+ SendKeys ("{enter}")
+ SendKeys text1.Text
+ SendKeys ("{enter}")
+ SendKeys "<<-x-X-x-X-x-=ATTENTION=-x-X-x-X-x->>"
+ SendKeys ("{enter}")
+ End Sub
+ Thats an attention
+ ---------------------------------------------------------------------------------------------------
+ 
+ Sub Command3D1_Click ()
+ AppActivate "America  Online"
+ SendKeys "<<-xXxXx-AnArKy TimE and DatE Bot-xXxXx->>"
+ SendKeys ("{enter}")
+ SendKeys "xXxXxXxXxXxThe Time Iz " + text1.Text + ""
+ SendKeys ("{enter}")
+ SendKeys "xXxXxXxXxXxTodays Date Iz " + text2.Text + ""
+ SendKeys ("{enter}")
+ SendKeys "xXxXxXxXxXxIn EasTerN StanDarD TimE!!"
+ SendKeys ("{enter}")
+ End Sub
+ 
+ Thats a time and date
+ ------------------------------------------------------------------------------------------------------------
+ 
+ Sub Command3D1_Click ()
+ AppActivate "america  online"
+     Dim Dice1, Dice2, Msg
+     Randomize
+     Dice1 = Int(6 * Rnd + 1)
+     Dice2 = Int(6 * Rnd + 1)
+     SendKeys "<<-xXxXx-Dice Bot Now Active-xXxXx->>"
+     SendKeys ("{enter}")
+     SendKeys text1.Text + "--You rolled a " & Dice1
+     SendKeys " and a " & Dice2
+     SendKeys " for a total of "
+     SendKeys Dice1 + Dice2
+     SendKeys ("{enter}")
+ 
+ 
+ End Sub
+ thats a dice bot
+ --------------------------------------------------------------------------------------
+ 
+ Sub Buster_Click ()
+ AppActivate "America  Online"
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys ("{enter}")
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys "{tab}"
+ SendKeys "{enter}"
+ 
+ timeout = (10)
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys "{enter}"
+ SendKeys "^" + "{enter}"
+ SendKeys "^I", True
+ Call timeout(.6)
+ 
+ SendKeys "^" + "{ENTER}", True
+ 
+ Call timeout(.7)
+ SendKeys "{ENTER}"
+ 
+ Call timeout(.5)
+ AppActivate "America  Online"
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys ("{enter}")
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys "{tab}"
+ SendKeys "{enter}"
+ 
+ timeout = (10)
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys "{enter}"
+ SendKeys "^" + "{enter}"
+ SendKeys "^I", True
+ Call timeout(.6)
+ 
+ SendKeys "^" + "{ENTER}", True
+ 
+ Call timeout(.7)
+ SendKeys "{ENTER}"
+ 
+ Call timeout(.5)
+ AppActivate "America  Online"
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys ("{enter}")
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys "{tab}"
+ SendKeys "{enter}"
+ 
+ timeout = (10)
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys "{enter}"
+ SendKeys "^" + "{enter}"
+ SendKeys "^I", True
+ Call timeout(.6)
+ 
+ SendKeys "^" + "{ENTER}", True
+ 
+ Call timeout(.7)
+ SendKeys "{ENTER}"
+ 
+ Call timeout(.5)
+ AppActivate "America  Online"
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys ("{enter}")
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys "{tab}"
+ SendKeys "{enter}"
+ 
+ timeout = (10)
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys "{enter}"
+ SendKeys "^" + "{enter}"
+ SendKeys "^I", True
+ Call timeout(.6)
+ 
+ SendKeys "^" + "{ENTER}", True
+ 
+ Call timeout(.7)
+ SendKeys "{ENTER}"
+ 
+ Call timeout(.5)
+ AppActivate "America  Online"
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys ("{enter}")
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys "{tab}"
+ SendKeys "{enter}"
+ 
+ timeout = (10)
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys "{enter}"
+ SendKeys "^" + "{enter}"
+ SendKeys "^I", True
+ Call timeout(.6)
+ 
+ SendKeys "^" + "{ENTER}", True
+ 
+ Call timeout(.7)
+ SendKeys "{ENTER}"
+ 
+ Call timeout(.5)
+ AppActivate "America  Online"
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys ("{enter}")
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys "{tab}"
+ SendKeys "{enter}"
+ 
+ timeout = (10)
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys "{enter}"
+ SendKeys "^" + "{enter}"
+ SendKeys "^I", True
+ Call timeout(.6)
+ 
+ SendKeys "^" + "{ENTER}", True
+ 
+ Call timeout(.7)
+ SendKeys "{ENTER}"
+ 
+ Call timeout(.5)
+ AppActivate "America  Online"
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys ("{enter}")
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys "{tab}"
+ SendKeys "{enter}"
+ 
+ timeout = (10)
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys "{enter}"
+ SendKeys "^" + "{enter}"
+ SendKeys "^I", True
+ Call timeout(.6)
+ 
+ SendKeys "^" + "{ENTER}", True
+ 
+ Call timeout(.7)
+ SendKeys "{ENTER}"
+ 
+ Call timeout(.5)
+ AppActivate "America  Online"
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys ("{enter}")
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys "{tab}"
+ SendKeys "{enter}"
+ 
+ timeout = (10)
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys "{enter}"
+ SendKeys "^" + "{enter}"
+ SendKeys "^I", True
+ Call timeout(.6)
+ 
+ SendKeys "^" + "{ENTER}", True
+ 
+ Call timeout(.7)
+ SendKeys "{ENTER}"
+ 
+ Call timeout(.5)
+ AppActivate "America  Online"
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys ("{enter}")
+ SendKeys "^k"
+ SendKeys " aol://2719:2-2-"
+ SendKeys ("" + Text1.Text + "")
+ SendKeys "{tab}"
+ SendKeys "{enter}"
+ 
+ timeout = (10)
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys ("{enter}")
+ SendKeys "  "
+ SendKeys "{enter}"
+ SendKeys "^" + "{enter}"
+ SendKeys "^I", True
+ Call timeout(.6)
+ 
+ SendKeys "^" + "{ENTER}", True
+ 
+ Call timeout(.7)
+ SendKeys "{ENTER}"
+ 
+ Call timeout(.5)
+ 
+ End Sub
+ thats a very messed up room bust
+ ----------------------------------------------------------------------------
+ 
+ Sub Command3D1_Click ()
+ Dim NumMessage, Msg
+ NumMessage = Text4
+ For SendMessage = 1 To NumMessage
+ AppActivate "America  Online"
+ SendKeys "^m", True
+ Call timeout(.8)
+ SendKeys "" + Text1.Text
+ SendKeys "{TAB}", True
+ SendKeys "{TAB}", True
+ 
+ SendKeys "" + text2.Text
+ SendKeys "{TAB}", True
+ SendKeys "" + text3.Text
+ SendKeys "{enter}", True
+ SendKeys "         -x¥X¥x-AnArKiStS MaiL BomBeR-x¥X¥x-"
+ SendKeys "{ENTER}", True
+ SendKeys "^I", True
+ Call timeout(.6)
+ 
+ SendKeys "^" + "{ENTER}", True
+ 
+ Call timeout(.7)
+ SendKeys ("{ENTER}")
+ 
+ Call timeout(.5)
+ 
+ 
+ Call timeout(.6)
+ SendKeys ("{enter}")
+ SendKeys "^" + ("{F4}")
+ Next SendMessage
+ End Sub
+ thats a real good mail bomber!!! infact itz the best ive seen
+ --------------------------------------------------------------------------------------------------
+ 
+ Sub Command3D1_Click ()
+ AppActivate "america  online"
+     Dim fighter1, fighter2
+     Randomize
+     hit1 = Int(15 * Rnd + 1)
+     
+     SendKeys "<<-xXxXx-FighteR Bot Now Active-xXxXx->>"
+     SendKeys ("{enter}")
+     SendKeys " xX " + text1.Text
+     Call timeout(3)
+     If hit1 = Int(1) Then SendKeys " Does A MaD RoundHouse kick on "
+     If hit1 = Int(2) Then SendKeys " Does A 360 Judo Kick on "
+     If hit1 = Int(3) Then SendKeys " Does A Leg sweep on "
+     If hit1 = Int(4) Then SendKeys " Slaps "
+     If hit1 = Int(5) Then SendKeys " Stabs "
+     If hit1 = Int(6) Then SendKeys " Does A GroiN Pull on "
+     If hit1 = Int(7) Then SendKeys " Uses Blowtorch to BurN "
+     If hit1 = Int(8) Then SendKeys " Throws a Brick at "
+     If hit1 = Int(9) Then SendKeys " Spitz on "
+     If hit1 = Int(10) Then SendKeys " Walks AwaY FroM "
+     If hit1 = Int(11) Then SendKeys " Kisses "
+     If hit1 = Int(12) Then SendKeys " Runs Over "
+     If hit1 = Int(13) Then SendKeys " Chokes "
+     If hit1 = Int(14) Then SendKeys " Gets burned with a candle by "
+     If hit1 = Int(15) Then SendKeys " Gets hit With a baseball bat by "
+     SendKeys text2.Text + " Xx "
+     SendKeys ("{enter}")
+     
+     Randomize
+     hit1 = Int(15 * Rnd + 1)
+     SendKeys " xX " + text2.Text
+     Call timeout(3)
+     If hit1 = Int(1) Then SendKeys " Does A MaD RoundHouse kick on "
+     If hit1 = Int(2) Then SendKeys " Does A 360 Judo Kick on "
+     If hit1 = Int(3) Then SendKeys " Does A Leg sweep on "
+     If hit1 = Int(4) Then SendKeys " Slaps "
+     If hit1 = Int(5) Then SendKeys " Stabs "
+     If hit1 = Int(6) Then SendKeys " Does A GroiN Pull on "
+     If hit1 = Int(7) Then SendKeys " Uses Blowtorch to BurN "
+     If hit1 = Int(8) Then SendKeys " Throws a Brick at "
+     If hit1 = Int(9) Then SendKeys " Spitz on "
+     If hit1 = Int(10) Then SendKeys " Walks AwaY FroM "
+     If hit1 = Int(11) Then SendKeys " Kisses "
+     If hit1 = Int(12) Then SendKeys " Runs Over "
+     If hit1 = Int(13) Then SendKeys " Chokes "
+     If hit1 = Int(14) Then SendKeys " Gets burned with a candle by "
+     If hit1 = Int(15) Then SendKeys " Gets hit With a baseball bat by "
+     
+     SendKeys text1.Text + " Xx "
+     SendKeys ("{enter}")
+     
+     Randomize
+     hit1 = Int(15 * Rnd + 1)
+     SendKeys " xX " + text1.Text
+     If hit1 = Int(1) Then SendKeys " Does A MaD RoundHouse kick on "
+     If hit1 = Int(2) Then SendKeys " Does A 360 Judo Kick on "
+     If hit1 = Int(3) Then SendKeys " Does A Leg sweep on "
+     If hit1 = Int(4) Then SendKeys " Slaps "
+     If hit1 = Int(5) Then SendKeys " Stabs "
+     If hit1 = Int(6) Then SendKeys " Does A GroiN Pull on "
+     If hit1 = Int(7) Then SendKeys " Uses Blowtorch to BurN "
+     If hit1 = Int(8) Then SendKeys " Throws a Brick at "
+     If hit1 = Int(9) Then SendKeys " Spitz on "
+     If hit1 = Int(10) Then SendKeys " Walks AwaY FroM "
+     If hit1 = Int(11) Then SendKeys " Kisses "
+     If hit1 = Int(12) Then SendKeys " Runs Over "
+     If hit1 = Int(13) Then SendKeys " Chokes "
+     If hit1 = Int(14) Then SendKeys " Gets burned with a candle by "
+     If hit1 = Int(15) Then SendKeys " Gets hit With a baseball bat by "
+     SendKeys text2.Text + " Xx "
+     SendKeys ("{enter}")
+     
+ 
+     Randomize
+     hit1 = Int(15 * Rnd + 1)
+     SendKeys " xX " + text2.Text
+     If hit1 = Int(1) Then SendKeys " Does A MaD RoundHouse kick on "
+     If hit1 = Int(2) Then SendKeys " Does A 360 Judo Kick on "
+     If hit1 = Int(3) Then SendKeys " Does A Leg sweep on "
+     If hit1 = Int(4) Then SendKeys " Slaps "
+     If hit1 = Int(5) Then SendKeys " Stabs "
+     If hit1 = Int(6) Then SendKeys " Does A GroiN Pull on "
+     If hit1 = Int(7) Then SendKeys " Uses Blowtorch to BurN "
+     If hit1 = Int(8) Then SendKeys " Throws a Brick at "
+     If hit1 = Int(9) Then SendKeys " Spitz on "
+     If hit1 = Int(10) Then SendKeys " Walks AwaY FroM "
+     If hit1 = Int(11) Then SendKeys " Kisses "
+     If hit1 = Int(12) Then SendKeys " Runs Over "
+     If hit1 = Int(13) Then SendKeys " Chokes "
+     If hit1 = Int(14) Then SendKeys " Gets burned with a candle by "
+     If hit1 = Int(15) Then SendKeys " Gets hit With a baseball bat by "
+     
+     SendKeys text1.Text + " Xx "
+     SendKeys ("{enter}")
+ 
+ 
+ End Sub
+ thats a fighter bot
+ -----------------------------------------------------------------------------------------------------------------------
+ 
+ Sub Command3D1_Click ()
+ Dim numim, msg
+ numim = text3
+ For sendim = 1 To numim
+ AppActivate "america  online"
+ 
+ SendKeys "^i"
+ SendKeys ("" + text1.Text + "")
+ SendKeys ("{enter}")
+ SendKeys "{tab}"
+ SendKeys ("" + Text2.Text + "")
+ SendKeys ("{enter}")
+ SendKeys "<<-----======AnArKiStS IM BoMb======----->>"
+ SendKeys "{tab}"
+ SendKeys "   "
+ Call timeout(2)
+ Next sendim
+ 
+ End Sub
+ Im bomber
+ --------------------------------------------------------------------------------------------------------------------
+ 
+ Sub timTimer_Timer ()
+ 
+     lblLabel.Caption = "At this point you should be getting really annoyed with the noise. Probably a good idea to hit OK now!"
+     Beep
+     timTimer.Interval = 500
+     timTimer.Enabled = True
+ 
+ End Sub
+ this is an annoy
+ -----------------------------------------------------------------------------------------
+ 
+ Sub Command3D1_Click ()
+ AppActivate "America  Online"
+ Call send("" + text3.Text)
+ Call timeout(.6)
+ End Sub
+ 
+ Sub Text1_Change ()
+ If Text1.Text = "a" Then
+     Text2.Text = "@"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "b" Then
+     Text2.Text = "þ"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "c" Then
+     Text2.Text = "©"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "d" Then
+     Text2.Text = "d"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "e" Then
+     Text2.Text = "ë"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "f" Then
+     Text2.Text = "F"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "g" Then
+     Text2.Text = "g"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "h" Then
+     Text2.Text = "|-|"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "i" Then
+     Text2.Text = "î"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "j" Then
+     Text2.Text = "j"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "k" Then
+     Text2.Text = "|<"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "l" Then
+     Text2.Text = "£"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "m" Then
+     Text2.Text = "/\/\"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "n" Then
+     Text2.Text = "ñ"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "o" Then
+     Text2.Text = "ø"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "p" Then
+     Text2.Text = "p"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "q" Then
+     Text2.Text = "q"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "r" Then
+     Text2.Text = "®"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "s" Then
+     Text2.Text = "$"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "t" Then
+     Text2.Text = "-|-"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "u" Then
+     Text2.Text = "û"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "v" Then
+     Text2.Text = "v"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "w" Then
+     Text2.Text = "vv"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "x" Then
+     Text2.Text = "×"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "y" Then
+     Text2.Text = "ý"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "z" Then
+     Text2.Text = "z"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = " " Then
+     Text2.Text = " "
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "!" Then
+     Text2.Text = "¡"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "1" Then
+     Text2.Text = "1"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "2" Then
+     Text2.Text = "2"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "3" Then
+     Text2.Text = "3"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "4" Then
+     Text2.Text = "4"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "5" Then
+     Text2.Text = "5"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "6" Then
+     Text2.Text = "6"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "7" Then
+     Text2.Text = "7"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "8" Then
+     Text2.Text = "8"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "9" Then
+     Text2.Text = "9"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "0" Then
+     Text2.Text = "0"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "A" Then
+     Text2.Text = "Å"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "B" Then
+     Text2.Text = "ß"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "C" Then
+     Text2.Text = "Ç"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "D" Then
+     Text2.Text = "Ð"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "E" Then
+     Text2.Text = "Ë"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "F" Then
+     Text2.Text = "«F»"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "G" Then
+     Text2.Text = "G"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "H" Then
+     Text2.Text = "{)}-{(}"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "I" Then
+     Text2.Text = "Î"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "J" Then
+     Text2.Text = "J"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "K" Then
+     Text2.Text = "{]}<"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "L" Then
+     Text2.Text = "£"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "M" Then
+     Text2.Text = "{(}V{)}"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "N" Then
+     Text2.Text = "{]}\{[}"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "O" Then
+     Text2.Text = "Õ"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "P" Then
+     Text2.Text = "¶"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "Q" Then
+     Text2.Text = "`Q"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "R" Then
+     Text2.Text = "°R°"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "S" Then
+     Text2.Text = "§"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "T" Then
+     Text2.Text = "T"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "U" Then
+     Text2.Text = "Ü"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "V" Then
+     Text2.Text = "\/"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "W" Then
+     Text2.Text = "\X/"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "X" Then
+     Text2.Text = "><"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "Y" Then
+     Text2.Text = "¥"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "Z" Then
+     Text2.Text = "Z"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "~" Then
+     Text2.Text = "~"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "`" Then
+     Text2.Text = "`"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "!" Then
+     Text2.Text = "¡"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "@" Then
+     Text2.Text = "ä"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "#" Then
+     Text2.Text = "#"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "$" Then
+     Text2.Text = "$"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "%" Then
+     Text2.Text = "%"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "^" Then
+     Text2.Text = "{^}"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "&" Then
+     Text2.Text = "&"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "*" Then
+     Text2.Text = "*"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "(" Then
+     Text2.Text = "{(}"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = ")" Then
+     Text2.Text = "{)}"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "-" Then
+     Text2.Text = "-"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "_" Then
+     Text2.Text = "_"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "+" Then
+     Text2.Text = "+"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "=" Then
+     Text2.Text = "="
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "[" Then
+     Text2.Text = "{[}"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "]" Then
+     Text2.Text = "{]}"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "{" Then
+     Text2.Text = "{{}"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "}" Then
+     Text2.Text = "{}}"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = ":" Then
+     Text2.Text = ":"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = ";" Then
+     Text2.Text = ";"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "'" Then
+     Text2.Text = "'"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "," Then
+     Text2.Text = ","
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "." Then
+     Text2.Text = "."
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "<" Then
+     Text2.Text = "<"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = ">" Then
+     Text2.Text = ">"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+ If Text1.Text = "?" Then
+     Text2.Text = "¿"
+     Text1.Text = ""
+     text3.Text = text3.Text + Text2.Text
+     Text1.SetFocus
+ End If
+     If Text1.Text = "_" Then
+         Text1.Text = ""
+         text3.SetFocus
+             SendKeys "{RIGHT 90}"
+             SendKeys "{Backspace}"
+         DoEvents
+         Text1.SetFocus
+    End If
+ 
+ End Sub
+ thats elite talker
+ ---------------------------------------------------------------------------------------------
+ 
+ Sub Command3D1_Click ()
+ Dim l001C As Variant
+ Dim l0022 As Variant
+ Dim l0026 As String
+ Dim l002A As Variant
+ Dim l002E As Variant
+ Dim l0032 As Variant
+ Dim l0036 As Variant
+ Dim l0040 As Variant
+ Dim l0044 As Variant
+ Dim l0048 As String
+ Dim l004C As Variant
+ Dim l0050 As Variant
+ Dim l0054 As String
+ Dim l0056 As Variant
+ Dim l005A As Variant
+ Dim l005E As Variant
+ Dim l0062 As Variant
+ Dim l0066 As Variant
+ Dim l006A As Variant
+ l001C = extfn1018("AOL FRAME25", 0&)
+ l0022 = extfn10F8(l001C, "Welcome")
+ l0026$ = String(30, 0)
+ l002A = extfnFA8(l0022, l0026$, 250)
+ If l002A <= 7 Then
+ MsgBox "An error occurred: Not Signed On!", 16
+ Exit Sub
+ End If
+ l002E = MsgBox("Do you wish to add @aol.com after the names?", 32 + 4, "Add Room")
+ If l002E = 6 Then
+ l0032 = "yes"
+ Else
+ l0032 = "no"
+ End If
+ l002E = extfn1018("AOL FRAME25", 0&)
+ l0036 = extfn10F8(l002E, "AOL Live!")
+ l0036 = extfn1088(l0036)
+ l0036 = extfn10C0(l0036, "_AOL_LISTBOX")
+ l0040 = extfnFE0(l0036, 1036, 0, 0)
+ For l0044 = 0 To l0040 - 1
+ l0048$ = String(30, 0)
+ l004C = extfn1608(l0044, l0048$)
+ l0050 = extfn10F8(l002E, "Welcome")
+ l0054$ = String(30, 0)
+ l0056 = extfnFA8(l0050, l0054$, 250)
+ l005A = Mid(l0054$, 10, 10)
+ l005E = InStr(l005A, "!")
+ If l005E Then
+ l005A = Mid(l005A, 1, l005E - 1)
+ End If
+ l0062 = InStr(l0048$, l005A)
+ If l0062 Then GoTo 80
+ l0066 = InStr(l0048$, Chr(0))
+ If l0066 Then
+ l006A = Mid(Trim(l0048$), 1, l0066 - 1)
+ Else
+ l006A = l0048$
+ End If
+ If l0032 = "yes" Then
+ Text1.Text = Text1.Text + "," + l006A + "@aol.com"
+ Else
+ Text1.Text = Text1.Text + "," + l006A
+ End If
+ 80 :
+ Next l0044
+ End Sub
+ Sub Command3D2_Click ()
+ Clipboard.Clear
+ Clipboard.SetText Text1.Text
+ 
+ End Sub
+ 
+ Sub Command3D3_Click ()
+ Clipboard.SetText Text1.Text
+ Text1.Text = ""
+ End Sub
+ Sub Command3D3_Click ()
+ Clipboard.SetText Text1.Text
+ Text1.Text = ""
+ End Sub
+ 
+ Sub Form_Load ()
+ extsub1050 addroom.hWnd, -1, 0, 0, 0, 0, 3
+ End Sub
+ 
+ thats add room
+
+

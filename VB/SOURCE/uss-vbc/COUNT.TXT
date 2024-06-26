@@ -1,0 +1,27 @@
+Visual Basic Source Code...Count Mail
+What to do...
+
+Make one (1) Command Button...
+
+In that Command Button type the following code (or copy paste)...
+Dim AOL%, Hand%, Buffer, ARF
+AOL% = FindWindow("AOL Frame25", 0&)
+ARF = FindChildByTitle(AOL%, "New Mail")
+Hand% = FindChildByClass(ARF, "_AOL_TREE")
+Buffer = SendMessageByNum(Hand%, LB_GETCOUNT, 0, 0)
+If Buffer > 1 Then
+MsgBox "You have " & Buffer & " messages in your New Mailbox.", 64, "Mail Count"
+Exit Sub
+End If
+If Buffer = 1 Then
+MsgBox "You have 1 message in your New mailbox.", 64, "Mail Count"
+Exit Sub
+End If
+If Buffer = 0 Then
+MsgBox "You have no messages in your New mailbox", 64, "Mail Count"
+Exit Sub
+End If
+End If
+End If
+Summary:You need Master2.bas for this to work.
+romeo007

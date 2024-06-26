@@ -1,0 +1,23 @@
+Pw ProTeCt
+MaKe 1 TeXt BoX 
+Make 1 CoMmAnD BuTtOn 
+In iT CoPy AnD PaStE 
+
+
+If text1.Text = "SteVe CaSe Is GaY" Then 'Pw is Case sensitive 
+
+MsgBox "yup" 
+
+'form2.Show Put the form you want to bring up if the pw is right 
+
+'form5.Hide put the name of the pw frm 
+
+Else 
+
+MsgBox "NoPe" 
+
+End If 
+
+
+
+YoU NeED MaStEr2.BaS 

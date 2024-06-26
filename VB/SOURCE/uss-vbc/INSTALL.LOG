@@ -1,0 +1,53 @@
+*** Installation Started 10/24/97 1:09 ***
+Title: AOL VB Programmer's Guide Installation
+Source: C:\AOL25\DOWNLOAD\GUIDE.EXE
+Made Dir: C:\VB_AOL
+Made Dir: C:\VB_AOL\BAS
+File Copy: C:\VB_AOL\BAS\MASTER32.BAS
+File Copy: C:\VB_AOL\Aolhelp.hlp
+File Copy: C:\VB_AOL\BAS\AOL_32.BAS
+File Copy: C:\VB_AOL\Readme.txt
+File Copy: C:\VB_AOL\BAS\AOL_16.BAS
+File Copy: C:\VB_AOL\FREESPY.EXE
+Made Dir: C:\VB_AOL\INTROAPI
+Made Dir: C:\VB_AOL\INTROAPI\VB_16
+File Copy: C:\VB_AOL\INTROAPI\VB_16\FORM1.FRM
+File Copy: C:\VB_AOL\INTROAPI\VB_16\INTROAPI.MAK
+File Copy: C:\VB_AOL\INTROAPI\VB_16\MODULE1.BAS
+Made Dir: C:\VB_AOL\INTROAPI\VB_32
+File Copy: C:\VB_AOL\INTROAPI\VB_32\FORM1.FRM
+File Copy: C:\VB_AOL\INTROAPI\VB_32\MODULE1.BAS
+File Copy: C:\VB_AOL\INTROAPI\VB_32\INTROAPI.VBP
+Made Dir: C:\VB_AOL\AOLTASKS
+Made Dir: C:\VB_AOL\AOLTASKS\VB_16
+File Copy: C:\VB_AOL\AOLTASKS\VB_16\FORM1.FRM
+File Copy: C:\VB_AOL\AOLTASKS\VB_16\AOLTASKS.MAK
+File Copy: C:\VB_AOL\AOLTASKS\VB_16\AOL_16.BAS
+File Copy: C:\VB_AOL\AOLTASKS\VB_16\FORM2.FRM
+File Copy: C:\VB_AOL\AOLTASKS\VB_16\FORM3.FRM
+File Copy: C:\VB_AOL\AOLTASKS\VB_16\FORM4.FRM
+File Copy: C:\VB_AOL\AOLTASKS\VB_16\AOLTASKS.EXE
+Made Dir: C:\VB_AOL\AOLTASKS\VB_32
+File Copy: C:\VB_AOL\AOLTASKS\VB_32\MASTER32.BAS
+File Copy: C:\VB_AOL\AOLTASKS\VB_32\AOLTASKS.EXE
+File Copy: C:\VB_AOL\AOLTASKS\VB_32\FORM1.FRM
+File Copy: C:\VB_AOL\AOLTASKS\VB_32\FORM2.FRM
+File Copy: C:\VB_AOL\AOLTASKS\VB_32\FORM3.FRM
+File Copy: C:\VB_AOL\AOLTASKS\VB_32\FORM4.FRM
+File Copy: C:\VB_AOL\AOLTASKS\VB_32\AOL_32.BAS
+File Copy: C:\VB_AOL\AOLTASKS\VB_32\FORM1.FRX
+File Copy: C:\VB_AOL\AOLTASKS\VB_32\FORM2.FRX
+File Copy: C:\VB_AOL\AOLTASKS\VB_32\AOLTASKS.VBP
+File Copy: C:\VB_AOL\UNWISE.EXE
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\AOL VB Programmer's Guide
+RegDB Val: AOL VB Programmer's Guide
+RegDB Name: DisplayName
+RegDB Root: 2
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\AOL VB Programmer's Guide
+RegDB Val: C:\VB_AOL\UNWISE.EXE C:\VB_AOL\INSTALL.LOG
+RegDB Name: UninstallString
+RegDB Root: 2
+Made Dir: C:\WINDOWS\Start Menu\Programs\AOL VB Programmer's Guide
+Shell Link: C:\WINDOWS\Start Menu\Programs\AOL VB Programmer's Guide\Aolhelp Help.lnk
+Shell Link: C:\WINDOWS\Start Menu\Programs\AOL VB Programmer's Guide\FREESPY.lnk
+Shell Link: C:\WINDOWS\Start Menu\Programs\AOL VB Programmer's Guide\Readme.lnk

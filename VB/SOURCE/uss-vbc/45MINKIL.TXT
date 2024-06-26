@@ -1,0 +1,16 @@
+Visual Basic Source Code ...45 Minute Killer
+What to do...
+
+Make one (1) Timer and set the interval to 100
+
+In that Timer type the following code (or copy paste)...
+Dim AOL%, E%, J%
+AOL% = FindWindow("AOL Frame25", 0&)
+E% = FindWindow("_AOL_Palette", "America Online")
+J% = FindChildByTitle(E%, "OK")
+If E% = 0 Then
+Exit Sub
+Else
+Timeout (.5)
+AOLClick (J%)
+End If

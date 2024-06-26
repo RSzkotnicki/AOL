@@ -1,0 +1,13 @@
+Visual Basic Source Code ...Using Rotext.vbx
+What to do... 
+•Make one (1) Rotext label •Make one (1) Command Button •In that Command 
+type the following code (or copy paste)... 
+
+
+Dim X As Integer
+For X = 1 to 100 Step 1
+Rotext1.angle = Val(Rotext1.angle) + 10
+Next X
+
+
+Summary:This will rotate that label 

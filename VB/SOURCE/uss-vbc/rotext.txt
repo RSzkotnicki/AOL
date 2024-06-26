@@ -1,0 +1,59 @@
+Ok, here is some stuff you can do with RoText.vbx
+
+1. Make text spin on a from counter-clockwise...
+
+Put a RoText box on your form
+Put a Timer on your form
+Go into the properties of the timer and have Timer1.Interval = 1
+Have Timer1.Enabled = True if you want it to start when you load the form
+Have Timer1.Enabled = False if you want it to start when you click a button.
+
+In Timer1 put this code:
+RoText1.Angle = RoText1.Angle + 2 ' this tells how many degrees to spin the
+Text
+the bigger the number, the faster it spins...it's a good idea to use an even
+number...
+
+' if you run the program now, it will just have the Text spin forever...There
+are a couple ways to have it stop.
+
+   A. make a command button with this code:
+       Timer1.Enabled = False
+       Timer1.Interval = 0
+
+   B. To make it stop after a certain number of spins, put this in Timer1:
+        RoText1.Angle = RoText1.Angle + 2
+        If RoText1.Angle = x * 360 Then Timer1.Enabled = False &
+Timer1.Interval = 0
+       ' x = the number of complete spins...
+
+2. To have the Text spin clock-wise instead of counter-clockwise like normal:
+    RoText1.Angle = RoText1. Angle + (-2)
+
+To have the Text spin in one direction, then spin in the other direction...
+  RoText1.Angle = RoText1.Angle + 2
+  If RoText1.Angle = x * 360 Then 
+  Timer1.Enabled = False 
+  Timer1.Interval = 0
+  Timer2.Enabled = True
+  Timer2.Interval = 1
+  End if
+  
+In the second timer, just put the clockwise spin code...
+
+You can do the same thing with the colors, size, etc...all just by using a
+Timer...
+
+If you need any more help, just ask...   L8er, 
+                                 
+                                         DarKSeiD
+
+
+
+
+
+
+
+
+
+

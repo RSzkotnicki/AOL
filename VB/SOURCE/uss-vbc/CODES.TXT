@@ -1,0 +1,883 @@
+<HTML><PRE>Subj:	More ~Vb Code~œ API œ 
+Date:	97-06-08 11:04:41 EDT
+From:	OoLoReoO
+BCC:	CoolSwoosh
+
+«‹- -–|[¤ Fate X 2.5 Mass Mailer By MaGuS ¤]|–-- -›»
+            «‹- -–|[¤ Mail 7 of 29 ¤]|–-- -›»
+          «‹- -–|[¤ 24% Transfered ¤]|–-- -›»
+
+Here if I ever need help I already gave you something?
+-----------------
+Forwarded Message: 
+Subj:	More ~Vb Code~œ API œ 
+Date:	97-06-08 10:25:55 EDT
+From:	Carrera83
+To:	OoLoReoO
+
+
+-----------------
+Forwarded Message: 
+Subj:	Carrera83
+Date:	97-06-03 04:57:58 EDT
+From:	KUNGER8212
+To:	Carrera83
+<FONT  COLOR="#000000" SIZE=3>
+                      API Codes
+
+KILLWAIT
+What to do...
+
+Make one (1) Command Button...
+
+In that Command Button type the following code...
+Dim e%, j%, AOL%
+AOL% = FindWindow("AOL Frame25", 0&)
+If AOL% = 0 Then
+Exit Sub
+Else
+AOL% = FindWindow("AOL Frame25", 0&)
+Call RunMenuByString("Edit &Address Book...", "&Mail")
+Do Until e% <> 0
+e% = FindWindow("_AOL_Modal", "Address Book")
+timeout (.001)
+Loop
+j% = findchildbytitle(e%, "OK")
+AOLClick (j%)
+End If
+
+Summary:You need Master2.bas for this to work.
+
+KILL/SHOW WELCOME SCREEN
+What to do...
+
+Make one (1) Command Button...
+
+In that Command Button type the following code...
+
+AOL% = FindWindow("AOL Frame25", 0&)
+X% = FindChildByTitle(AOL%, "Welcome, " + GetSN$() + "!")
+ If Command1.Caption = "Kill Welc." Then
+Command1.Caption = "Show Welc."
+AOL% = FindWindow("AOL Frame25", 0&)
+X% = FindChildByTitle(AOL%, "Welcome, " + GetSN$() + "!")
+       Q% = ShowWindow(X%, SW_MINIMIZE)
+       Q% = ShowWindow(X%, SW_HIDE)
+   Else
+   Command1.Caption = "Kill Welc."
+      AOL% = FindWindow("AOL Frame25", 0&)
+       X% = FindChildByTitle(AOL%, "Welcome, " + GetSN$() + "!")
+       Q% = Showwindow(X%, SW_SHOW)
+   End If
+End If
+
+Summary:You need Master2.bas for this to work.
+
+SEND TEXT TO CHAT ROOM
+What to do...
+
+Make one (1) Command Button...
+
+In that Command Button type the following code...
+
+Dim AOl As Integer
+Dim Room2 As Integer
+Dim Cedit  As Integer
+Dim Q     As Integer
+Dim P As Integer
+Dim R As Integer
+Dim WhatToSend As String
+Dim WhatToSend2 As String
+Dim WhatToSend3 As String
+AOl% = FindWindow("AOL Frame25", 0&)
+Room2% = FindChatWnd()
+Cedit% = FindChildByClass(Room2%, "_AOL_EDIT")
+WhatToSend$ = "                - –=••§ °• ¿GuEsS¿ •°® §••=– - "
+Q% = SendMessageByString(Cedit%, WM_SetText, 0, WhatToSend$)
+Q% = SendMessageByNum(Cedit%, WM_CHAR, 13, 0)
+DoEvents
+timeout (.002)
+WhatToSend2$ = "             - –=••§ ßy:CoN§••=– - "
+R% = SendMessageByString(Cedit%, WM_SetText, 0, WhatToSend2$)
+R% = SendMessageByNum(Cedit%, WM_CHAR, 13, 0)
+DoEvents
+timeout (.002)
+WhatToSend3$ = "                - –=••§ °• ¿GuEsS¿ •°® §••=– - "
+P% = SendMessageByString(Cedit%, WM_SetText, 0, WhatToSend3$)
+P% = SendMessageByNum(Cedit%, WM_CHAR, 13, 0)
+DoEvents
+
+Summary:You need Master2.bas for this to work.
+
+SUP BOT
+What to do...
+
+Make one (1) Command Button...
+Make one (1) List Box
+
+In that Command Button type the following code...
+
+Dim AOl As Integer
+Dim e As Integer
+Dim Q As Integer
+Dim Room2 As Integer
+Dim index As Integer
+Dim Cedit As Integer
+Dim NameZ As String
+Dim WhatToSend As String
+Dim ErB As String
+Dim RET
+Dim i As Integer
+Dim p As Integer
+list1.Clear
+For index% = 0 To 25 'This will loop until everyone's added 
+NameZ$ = String$(256, " ")
+RET = AOLGetList(index%, NameZ$) & ErB$
+If Len(Trim$(NameZ$))  0
+AOL% = FindWindow("AOL Frame25", 0&)
+Room2% = FindChatWnd()
+Cedit% = Findchildbyclass(Room2%, "_AOL_EDIT")
+WhatToSend$ = "- –=••§ °•" & "Sup Dunt¿" & "•° §••=– - " & list1.List(e)
+Q% = SendMessageByString(Cedit%, WM_SetText, 0, WhatToSend$)
+Q% = SendMessageByNum(Cedit%, WM_CHAR, 13, 0)
+DoEvents
+timeout (1)
+list1.RemoveItem e
+Loop
+AOL% = FindWindow("AOL Frame25", 0&)
+Room2% = FindChatWnd()
+Cedit% = Findchildbyclass(Room2%, "_AOL_EDIT")
+WhatToSend$ = "- –=••§ °•¿GuEsS¿ SuP Bot•° §••=– - " & list1.List(e)
+Q% = SendMessageByString(Cedit%, WM_SetText, 0, WhatToSend$)
+timeout (.001)
+Q% = SendMessageByNum(Cedit%, WM_CHAR, 13, 0)
+DoEvents
+
+Summary:You need Master2.bas for this to work.
+
+IM ON/OFF
+What to do...
+
+Make one (1) Command Button...
+
+In that Command Button type the following code...
+
+Dim AOl As Integer
+Dim l0180 As Integer
+Dim l0176 As Integer
+Dim ed1 As Integer
+Dim ed2 As Integer
+Dim ed3 As Integer
+Dim ed4 As Integer
+Dim ed5 As Integer
+Dim ed6 As Integer
+Dim ed7 As Integer
+Dim ed8 As Integer
+Dim ed9 As Integer
+Dim ed10 As Integer
+Dim ed11 As Integer
+Dim ed12 As Integer
+Dim l017A As Integer
+Dim x As Integer
+AOl% = FindWindotor
+Call RunMenuByString("Send an Instant Message", "Mem&bers")
+Do
+For l0180 = 1 To 25
+DoEvents
+Next l0180
+l0176 = findchildbytitle(AOl%, "Send Instant Message")
+Loop Until l0176
+DoEvents
+ed1% = FindChildByClass(l0176, "_AOL_Edit")
+ed2% = getnextwindow(ed1%, 2)
+ed3% = getnextwindow(ed2%, 2)
+ed4% = getnextwindow(ed3%, 2)
+ed5% = getnextwindow(ed4%, 2)
+ed6% = getnextwindow(ed5%, 2)
+ed7% = getnextwindow(ed6%, 2)
+ed8% = getnextwindow(ed7%, 2)
+ed9% = getnextwindow(ed8%, 2)
+ed10% = getnextwindow(ed9%, 2)
+ed11% = getnextwindow(ed10%, 2)
+sendtext ed1%, "$im_on"
+sendtext ed10%, "¿GuEsS¿-Instant Message On"
+AOLClick ed11%
+l017A = findchildbytitle(l0176, "Send")
+   waitforok
+   x = SendMessageByNum(l0176, WM_CLOSE, 0, 0)
+To turn it off Type this in another button
+Dim AOl As Integer
+Dim l0180 As Integer
+Dim l0176 As Integer
+Dim ed1 As Integer
+Dim ed2 As Integer
+Dim ed3 As Integer
+Dim ed4 As Integer
+Dim ed5 As Integer
+Dim ed6 As Integer
+Dim ed7 As Integer
+Dim ed8 As Integer
+Dim ed9 As Integer
+Dim ed10 As Integer
+Dim ed11 As Integer
+Dim ed12 As Integer
+Dim l017A As Integer
+Dim x As Integer
+AOl% = FindWindotor
+Call RunMenuByString("Send an Instant Message", "Mem&bers")
+Do
+For l0180 = 1 To 25
+DoEvents
+Next l0180
+l0176 = findchildbytitle(AOl%, "Send Instant Message")
+Loop Until l0176
+DoEvents
+ed1% = FindChildByClass(l0176, "_AOL_Edit")
+ed2% = getnextwindow(ed1%, 2)
+ed3% = getnextwindow(ed2%, 2)
+ed4% = getnextwindow(ed3%, 2)
+ed5% = getnextwindow(ed4%, 2)
+ed6% = getnextwindow(ed5%, 2)
+ed7% = getnextwindow(ed6%, 2)
+ed8% = getnextwindow(ed7%, 2)
+ed9% = getnextwindow(ed8%, 2)
+ed10% = getnextwindow(ed9%, 2)
+ed11% = getnextwindow(ed10%, 2)
+sendtext ed1%, "$im_Off"
+sendtext ed10%, "¿GuEsS¿-Instant Message Off"
+AOLClick ed11%
+l017A = findchildbytitle(l0176, "Send")
+   waitforok
+   x = SendMessageByNum(l0176, WM_CLOSE, 0, 0)
+
+Summary:You need Master2.bas for this to work.
+
+PRIVATE ROOM ENTER
+What to do...
+
+Make one (1) Command Button...
+
+In that Command Button type the following code...
+
+Dim aol%, Y%, Q%, X%, WhatToSend$
+If text1.Text = "" Then
+MsgBox "Enter a private room you dumd ass!!", 16, "Ass"
+Else
+AOL% = FindWindow("AOL Frame25", 0&)
+Call RunMenuByString("Keyword...", "&Go To")
+Dim w%
+Do Until X% <> 0
+X% = FindChildByTitle(AOL%, "Keyword")
+timeout (.001)
+Loop
+timeout (.2)
+Y% = FindChildByClass(X%, "_AOL_Edit")
+WhatToSend$ = "aol://2719:2-2-" + text1.Text
+Q% = SendMessageByString(Y%, WM_SetText, 0, WhatToSend$)
+Q% = SendMessageByNum(Y%, WM_CHAR, 13, 0)
+End If
+
+Summary:You need Master2.bas for this to work.
+
+ENCRYPTER
+What to do...
+
+Make two (2) Text Boxes...
+Make Text2.Text the box you type the text into Encrypt/Decrypt...
+Make one (1) Command Button...
+
+In that Command Button type the following code...
+
+Dim A%, X%, Y%, Z%, I%, Temp, Pharse$
+Dim T As String
+If Text2.Text = "" Then
+MsgBox "Please type something Dick!!", 16, "Dick"
+Exit Sub
+Else
+Command1.Enabled = False
+Text2.Enabled = False
+Text1.Text = ""
+Text1.Text = Text2.Text
+Text2.Text = ""
+Pharse$ = Text1.Text
+For I = 1 To Len(Pharse$)
+      Temp = Asc(Mid$(Pharse$, I, 1))
+      Mid$(Pharse$, I, 1) = Chr$(Abs(Temp - 255))
+T$ = T$ + Mid$(Pharse$, I, 1)
+Next I
+T$ = ""
+Pharse$ = Text1.Text
+Text1.Text = ""
+Text1.Text = Text2.Text
+Text2.Text = ""
+For I = 1 To Len(Pharse$)
+      Temp = Asc(Mid$(Pharse$, I, 1))
+      Mid$(Pharse$, I, 1) = Chr$(Abs(Temp - 255))
+T$ = T$ + Mid$(Pharse$, I, 1)
+Next I
+Command1.Enabled = True
+Text2.Enabled = True
+Text2.Text = T$
+End If
+
+You need Master2.bas
+HIDE/SHOW AOL
+What to do...
+
+Make one (1) Command Button...
+Make the caption = to Hide AOL
+
+In that Command Button type the following code...
+Dim AOL%, Q%
+AOL% = FindWindow("AOL Frame25", 0&)
+If AOL% = 0 Then
+Exit Sub
+Else
+If command1.Caption = "Hide AOL" Then
+Command1.Caption = "Show AOL"
+AOL% = FindWindow("AOL Frame25", 0&)
+   Q% = ShowWindow(AOL%, SW_MINIMIZE)
+   Q% = ShowWindow(AOL%, SW_HIDE)
+Else
+Command1.Caption = "Hide AOL"
+AOl% = FindWindow("AOL Frame25", 0&)
+   Q% = ShowWindow(AOL%, SW_SHOW)
+   Q% = ShowWindow(AOL%, SW_MAXIMIZE)
+End If
+End If
+
+Summary:You need Master2.bas for this to work.
+
+MACRO KILLER
+What to do...
+
+Make one (1) Command Button...
+
+In that Command Button type the following code...
+
+Dim AOL As Integer
+Dim Room2 As Integer
+Dim Cedit  As Integer
+Dim Q As Integer
+Dim P As Integer
+Dim R As Integer
+Dim WhatToSend As String
+Dim x As Integer
+For x = 1 To 3 Step 1
+AOL% = FindWindow("AOL Frame25", 0&)
+Room2% = FindChatWnd()
+Cedit% = FindChildByClass(Room2%, "_AOL_EDIT")
+WhatToSend$ = "@¿GuEsS¿@ @@@@MaCrO@@@ @@@KiLlA@@@@ @@By Con&Nap@@@@  °•Destiny•°® @@@@@@@@@@@@@ "
+Q% = SendMessageByString(Cedit%, WM_SetText, 0, WhatToSend$)
+timeout (.001)
+Q% = SendMessageByNum(Cedit%, WM_CHAR, 13, 0)
+timeout (.001)
+Next x
+
+Summary:You need Master2.bas for this to work.
+
+COUNT MAIL
+What to do...
+
+Make one (1) Command Button...
+
+In that Command Button type the following code (or copy paste)...
+
+Dim AOL%, Hand%, Buffer, ARF
+AOL% = FindWindow("AOL Frame25", 0&)
+ARF = FindChildByTitle(AOL%, "New Mail")
+Hand% = FindChildByClass(ARF, "_AOL_TREE")
+Buffer = SendMessageByNum(Hand%, LB_GETCOUNT, 0, 0)
+If Buffer > 1 Then
+MsgBox "You have " & Buffer & " messages in your New Mailbox.", 64, "Mail Count"
+Exit Sub
+End If
+If Buffer = 1 Then
+MsgBox "You have 1 message in your New mailbox.", 64, "Mail Count"
+Exit Sub
+End If
+If Buffer = 0 Then
+MsgBox "Get mail loser!!", 64, "Loser"
+Exit Sub
+End If
+End If
+End If
+
+Summary:You need Master2.bas for this to work.
+
+UPCHAT
+What to do...
+
+Make one (1) Command Button...
+
+In that Command Button type the following code...
+
+Dim AOl%, AOM%, X%
+AOl% = FindWindow("AOL Frame25", 0&)
+AOM% = FindWindow("_AOL_Modal", 0&)
+If Command1.Caption = "UpChat" Then
+ If AOM% = 0 Then Exit Sub
+ Command1.Caption = "Un-Upchat"
+ AOM% = FindWindow("_AOL_Modal", 0&)
+ X% = EnableWindow(AOM%, 0)
+ AOl% = FindWindow("AOL Frame25", 0&)
+ X% = EnableWindow(AOl%, 1)
+Else
+ Command1.Caption = "UpChat"
+ AOl% = FindWindow("AOL Frame25", 0&)
+ AOM% = FindWindow("_AOL_Modal", 0&)
+ X% = EnableWindow(AOl%, 0)
+ X% = EnableWindow(AOM%, 1)
+End If
+
+Summary:You need Master2.bas for this to work
+
+IM IGNORE
+What to do...
+
+Make one (1) List Box (Screen Names to ignore)...
+Make one (1) Text Box (Screen Name to add to list)...
+Make one (1) Command Button (Add Name to list)...
+Make one (1) Timer...
+Set the Timer interval to 100
+
+In the Command Button type the following code (or copy paste)...
+
+Dim i
+If text1.Text = "" Or text1.Text = "   " Or text1.Text = "  " Or text1.Text = " " Then
+MsgBox "Enter a fucking screen name to ignore!!", 16, "Dick"
+Else
+Do
+If list1.List(i) = text1.Text Then Exit Sub
+i = 1 + i
+Loop Until list1.List(i) = ""
+list1.AddItem text1.Text
+text1.Text = ""
+End If
+
+In the Timer put this code...
+
+Dim e%, j%, AOL%, k%, a, x
+For a = 0 To list1.ListCount
+AOL% = FindWindow("AOL Frame25", 0&)
+e% = FindChildByTitle(AOL%, ">Instant Message From:")
+If e% <> 0 Then
+heh = GetWinText(e%)
+bah = Mid(heh, InStr(heh, ":") + 2)
+If LCase$(bah) = LCase$(list1.List(a)) Then
+k% = SendMessageByNum(e%, WM_CLOSE, 0, 0&)
+End If
+End If
+Next a
+x = SendMessageByString(e%, WM_SETTEXT, 0, " " & heh)
+In (general) put this code...
+Function GetWinText (hWnd As Integer) As String
+lentos = SendMessage(hWnd, WM_GETTEXTLENGTH, 0&, 0&)
+Buffer$ = Space$(lentos)
+x = SendMessageByString(hWnd, WM_GETTEXT, lentos + 1, Buffer$)
+GetWinText = Buffer$
+End Function
+
+Summary:You need Master2.bas for this to work.
+
+SYSTEM METER
+What to do...
+
+Make three (3) Labels
+Make one (1) Timer and set the interval to 100...
+
+In that Timer type the following code (or copy paste)...
+
+Dim GetFreeGDI$, GetFreeSys$, GetFreeUser$, GetCPUType$
+GetFreeGDI = Format$(GetFreeSystemResources(GFSR_GDIRESOURCES)) '+ "%"
+GetFreeSys = Format$(GetFreeSystemResources(GFSR_SYSTEMRESOURCES))' + "%"
+GetFreeUser = Format$(GetFreeSystemResources(GFSR_USERRESOURCES)) '+ "%"
+label1.Caption = GetFreeSys$ + "%"
+label2.Caption = GetFreeUser$ + "%"
+label3.Caption = GetFreeGDI$ + "%"
+
+Summary:You need Master2.bas for this to work.
+
+ROOM CHECKER
+What to do...
+
+Make one (1) Command Button...
+
+In that Command Button type the following code (or copy paste)...
+
+Dim AOL%, MDI%, List%, Edith%, View%, Iconn%, Childhandle%
+Dim bb As Integer
+AOL% = FindWindow("AOL Frame25", 0&)
+MDI% = FindChildByClass(AOL%, "MDIClient")
+bb = 0
+Childhandle% = GetWindow(MDI%, GW_CHILD)
+View% = FindChildByClass(Childhandle%, "_AOL_VIEW")
+If View% <> 0 Then Let bb = bb + 1
+Iconn% = FindChildByClass(Childhandle%, "_AOL_ICON")
+If Iconn% <> 0 Then Let bb = bb + 1
+Edith% = FindChildByClass(Childhandle%, "_AOL_Edit")
+If Edith% <> 0 Then Let bb = bb + 1
+List% = FindChildByClass(Childhandle%, "_AOL_LISTbox")
+If List% <> 0 Then Let bb = bb + 1
+If bb = 4 Then
+GoTo RANGER766
+End If
+If Childhandle% = 0 Then
+MsgBox "Enter a fucking chat room!", 16, "Dick"
+Exit Sub
+End If
+poop766:
+bb = 0
+Childhandle% = GetWindow(Childhandle%, GW_HWNDNEXT)
+View% = FindChildByClass(Childhandle%, "_AOL_VIEW")
+If View% <> 0 Then Let bb = bb + 1
+Iconn% = FindChildByClass(Childhandle%, "_AOL_ICON")
+If Iconn% <> 0 Then Let bb = bb + 1
+Edith% = FindChildByClass(Childhandle%, "_AOL_Edit")
+If Edith% <> 0 Then Let bb = bb + 1
+List% = FindChildByClass(Childhandle%, "_AOL_LISTBOX")
+If List% <> 0 Then Let bb = bb + 1
+If bb = 4 Then
+GoTo RANGER766
+End If
+If Childhandle% = 0 Then
+MsgBox "Enter a fucking chat room!!", 16, "Dick"
+Exit Sub
+End If
+GoTo poop766
+RANGER766:
+'************Code here if your in a room**************
+
+Summary:You need Master2.bas for this to work.
+
+ONLINE CHECKER
+What to do...
+
+Make one (1) Command Button...
+
+In that Command Button type the following code...
+
+Dim AOL%, Y, bah%, X$
+AOL% = FindWindow("AOL Frame25", 0&)
+bah% = FindChildByTitle(AOL%, "Welcome, " + GetSN$() + "!")
+X$ = GetWinText(bah%)
+Y = Len(X$)
+If Y 
+In (general) put this code...
+Function GetWinText (hWnd As Integer) As String
+Dim lentos, Buffer$, x
+lentos = SendMessage(hWnd, WM_GETTEXTLENGTH, 0&, 0&)
+Buffer$ = Space$(lentos)
+x = SendMessageByString(hWnd, WM_GETTEXT, lentos + 1, Buffer$)
+GetWinText = Buffer$
+End Function
+
+Summary:You need Master2.bas for this to work.
+
+FAKE OH SCROLLER
+What to do...
+
+Make one (1) Command Button...
+
+In that Command Button type the following code (or copy paste)...
+
+Dim heh$, bah$
+heh$ = Text1.Text
+bah$ = String(Val(116 - Len(heh$)), Chr(4))
+Send13 (heh$ & bah$ & heh$ & bah$ & heh$ & bah$ & heh$ & bah$ & heh$)
+timeout (.0001)
+Send13 (heh$ & bah$ & heh$ & bah$ & heh$ & bah$ & heh$ & bah$ & heh$)
+timeout (.0001)
+Send13 (heh$ & bah$ & heh$ & bah$ & heh$ & bah$ & heh$ & bah$ & heh$)
+timeout (.0001)
+Send13 (heh$ & bah$ & heh$ & bah$ & heh$ & bah$ & heh$ & bah$ & heh$)
+timeout (.0001)
+
+Summary:You need Master2.bas for this to work.
+
+45 MINUTE KILLER
+What to do...
+
+Make one (1) Command Button...
+Make one (1) Timer and set the interval to 100
+
+In that Timer type the following code (or copy paste)...
+
+Dim AOL%, E%, J%
+AOL% = FindWindow("AOL Frame25", 0&)
+E% = FindWindow("_AOL_Palette", "America Online")
+J% = FindChildByTitle(E%, "OK")
+If E% = 0 Then
+Exit Sub
+Else
+timeout (.5)
+AOLClick (J%)
+End If
+
+Summary:You need Master2.bas for this to work.
+
+IDLE BOT
+What to do...
+
+Make one (1) Timer and set the interval to 100
+
+In that Timer type the following code (or copy paste)...
+
+Dim AOL%, E%, J%, P%
+AOL% = FindWindow("AOL Frame25", 0&)
+E% = FindWindow("_AOL_Modal", "")
+P% = FindChildByTitle(E%, "No")
+If P% <> 0 Then Exit Sub
+J% = FindChildByTitle(E%, "Yes")
+pause (.5)
+AOLClick (J%)
+
+Summary:You need Master2.bas for this to work.
+
+ADD ROOM IN TEXT BOX
+What to do...
+
+Make one (1) List Box
+Make one (1) Text Box
+Make one (1) Command Button
+
+In that Command Button type the following code (or copy paste)...
+
+Dim index As Integer
+Dim NameZ As String
+Dim ErB As String
+Dim RET
+Dim i As Integer
+Dim P As Integer
+list1.Clear
+For index% = 0 To 25 'This will loop until everyone's added or it will stop at 25
+NameZ$ = String$(256, " ")
+RET = AOLGetList(index%, NameZ$) & ErB$
+If Len(Trim$(NameZ$))  0
+text1.Text = text1.Text + list1.List(e) + ", "
+list1.RemoveItem e
+Loop
+
+Summary:You need Master2.bas for this to work.
+
+ADD ROOM TO LIST BOX
+What to do...
+
+Make one (1) List Box
+Make one (1) Command Button
+
+In that Command Button type the following code (or copy paste)...
+
+Dim index As Integer
+Dim NameZ As String
+Dim ErB As String
+Dim RET
+Dim i As Integer
+Dim P As Integer
+list1.Clear
+For index% = 0 To 25 'This will loop until everyone's added or it will stop at 25
+NameZ$ = String$(256, " ")
+RET = AOLGetList(index%, NameZ$) & ErB$
+If Len(Trim$(NameZ$)) 
+
+Summary:You need Master2.bas for this to work.
+
+SIGN OFF
+What to do...
+
+Make one (1) Command Button...
+
+In that Command Button type the following code...
+
+Dim AOL%
+AOL% = FindWindow("AOL Frame25", 0&)
+If AOL% = 0 Then
+Exit Sub
+Else
+AOL% = FindWindow("AOL Frame25", 0&)
+Call RunMenuByString("&Sign Off", "&Sign Off")
+End If
+
+Summary:You need Master2.bas for this to work.
+
+KILL ADVERTISEMENT (PUBLIC ROOMS)
+What to do...
+
+Make one (1) Command Button...
+Set the caption to "Killadver."
+
+In that Command Button type the following code...
+
+If Command1.Caption = "Kill Adver." Then
+X% = FindChildByClass(AOL%, "_AOL_Image")
+If X% = 0 Then Exit Sub
+Command1.Caption = "Show Adver."
+AOL% = FindWindow("AOL Frame25", 0&)
+X% = FindChildByClass(AOL%, "_AOL_Image")
+Q% = ShowWindow(X%, SW_MINIMIZE)
+Q% = ShowWindow(X%, SW_HIDE)
+Else
+X% = FindChildByClass(AOL%, "_AOL_Image")
+If X% = 0 Then Exit Sub
+Command1.Caption = "Kill Adver."
+AOL% = FindWindow("AOL Frame25", 0&)
+X% = FindChildByClass(AOL%, "_AOL_Image")
+Q% = ShowWindow(X%, SW_NORMAL)
+End If
+
+Summary:You need Master2.bas for this to work.
+
+Title: Making A Clock
+Notes: None.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a label ( Label1 )
+---------------Make a Timer ( Timer1 )
+---------------Set Timer1.Interval to 500
+Code:
+
+-------Object: Timer1
+-------Proc: Timer
+If Label1 <> Cstr(Time) Then
+Label1.Caption = Time
+End If
+
+Summary: When this program is run, the time from your computer will 
+be read in the label.
+
+Title: Running Another Program Through Yours
+Notes: None.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a command button ( Command1 )
+Code:
+
+-------Obect: Command1
+-------Proc: Click
+RetVal = Shell("C:\WINDOWS\NAME_OF_FILE.EXE", 1)
+
+Summary: When you click the command button, name_of_file.exe will open which is located in the windows directory.
+
+Title: Ending Your Program
+Notes: None.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a command button ( Command1 )
+Code:
+
+-------Object: Command1
+-------Proc: Click
+Unload Me
+End
+
+Summary: This will end your application.
+
+Title: Playing A .WAV File - 16Bit
+Notes: None.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a new module ( Module1 )
+---------------Make a command button ( Command1 )
+Code - A:
+
+-----------Object: Module1
+-----------Proc: General Declarations
+Declare Function sndplaysound Lib"mmsystem.dll" (ByVal wavfile As Any,
+ByVal wflags As Integer) As Integer
+Global counter As Integer
+
+Code - B:
+
+-----------Object: Command1
+-----------Proc: Click
+i% = sndplaysound("name_of_file.wav", 1)
+
+Summary: When you click the command button, the name_of_file.wav will play
+
+Title: Always On Top - 16Bit
+Notes: The code for the module is all 1 line.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a new module ( Module1 )
+Code - A:
+
+-----------Object: Module1
+-----------Proc: General Declarations
+Declare Sub SetWindowPos Lib "User" (ByVal hWnd As Integer, ByVal hWnd
+As Integer, ByVal X As Integer, ByVal Y As Integer, ByVal cx As Integer,
+ByVal cy As Integer, ByVal wFlags As Integer)
+Code - B:
+
+-----------Object: Form
+-----------Proc: Load
+Call SetWindowPos(Me.hWnd, -1, 0, 0, 0, 0, 27)
+Summary: When this program is running, form1 will always be on top of all other programs that are running.
+
+Title: Have More Than 1 PW For Your Program
+Notes: For this example, our passwords will be "Password#1" & "Password#2".
+Instructions:
+---------------Make 2 forms ( Form1, Form2 )
+---------------Make a command button ( Command1 )
+---------------Make a text box ( Text1 )
+Code:
+•Serial # / PW: Name: Late Nite Pirates  Serial#: 4B7E33C3
+-------Object: Command1
+-------Proc: Click
+If Text1.Text = "¿GuEsS¿ iZ PaNdOliUm!!" Then
+Unload Form1
+Form2.Show
+ElseIf Text1.Text = "¿GuEsS¿ LiVeZ oN 4EvA" Then
+Unload Form1
+Form2.Show
+Else
+MsgBox "HaHa you just got virused for getting the PW worng you have 10 minutes b4 your computer is screwed.Have a nice day =]", , "HaHa"
+End If
+
+Summary: In this program, you now have the option of typing in Password#1 or Password#2 as your password.
+
+Visual Basic Source Code #24...Add Room to list Box
+
+What to do... 
+
+•Make one (1) List Box 
+•Make one (1) Command Button 
+•In that Command Button type the following code (or copy paste)... 
+
+
+Dim index As Integer
+Dim NameZ As String
+Dim ErB As String
+Dim RET
+Dim i As Integer
+Dim P As Integer
+list1.Clear
+For index% = 0 To 25 'This will loop until everyone's added or it will stop at 25
+NameZ$ = String$(256, " ")
+RET = AOLGetList(index%, NameZ$) & ErB$
+If Len(Trim$(NameZ$)) <= 1 Then Exit For
+NameZ$ = Left$(Trim$(NameZ$), Len(Trim(NameZ$)) - 1)
+list1.AddItem (NameZ$)
+Next index%
+For i = 0 To list1.ListCount
+    If list1.List(i) = GetSN() Then list1.RemoveItem i
+Next i
+Summary:You need Master2.bas for this to work. 
+
+<FONT  COLOR="#000000" SIZE=3>buster
+Dim aol%, Y%, Q%, X%, WhatToSend$
+If text1.Text = "" Then
+MsgBox "Please enter a private room!", 16, "Private Room"
+Else
+AOL% = FindWindow("AOL Frame25", 0&)
+Call RunMenuByString("Keyword...", "&Go To")
+Dim w%
+Do Until X% <> 0
+X% = FindChildByTitle(AOL%, "Keyword")
+timeout (.001)
+Loop
+timeout (.2)
+Y% = FindChildByClass(X%, "_AOL_Edit")
+WhatToSend$ = "aol://2719:2-2-" + text1.Text
+Q% = SendMessageByString(Y%, WM_SetText, 0, WhatToSend$)
+Q% = SendMessageByNum(Y%, WM_CHAR, 13, 0)
+End If</PRE></HTML>

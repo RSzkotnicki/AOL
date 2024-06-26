@@ -1,0 +1,26 @@
+Visual Basic Source Code...Hide/Show AOL
+What to do...
+
+Make one (1) Command Button...
+
+Make the caption = to Hide AOL
+
+In that Command Button type the following code...
+Dim AOL%, Q%
+AOL% = FindWindow("AOL Frame25", 0&)
+If AOL% = 0 Then
+Exit Sub
+Else
+If command1.Caption = "Hide AOL" Then
+Command1.Caption = "Show AOL"
+AOL% = FindWindow("AOL Frame25", 0&)
+   Q% = ShowWindow(AOL%, SW_MINIMIZE)
+   Q% = ShowWindow(AOL%, SW_HIDE)
+Else
+Command1.Caption = "Hide AOL"
+AOl% = FindWindow("AOL Frame25", 0&)
+   Q% = ShowWindow(AOL%, SW_SHOW)
+   Q% = ShowWindow(AOL%, SW_MAXIMIZE)
+End If
+End If
+Summary:You need Master2.bas for this to work.

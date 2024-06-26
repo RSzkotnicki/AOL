@@ -1,0 +1,23 @@
+Visual Basic Source Code...Kill Advertisement
+What to do... 
+•Make one (1) Command Button... •Set the caption to "Killadver." •In 
+that Command Button type the following code... 
+
+
+AOL% = FindWindow("AOL Frame25", 0&)
+If Command1.Caption = "Kill Adver." Then
+	X% = FindChildByClass(AOL%, "_AOL_Image")
+		If X% = 0 Then Exit Sub
+	Command1.Caption = "Show Adver."
+	AOL% = FindWindow("AOL Frame25", 0&)
+	X% = FindChildByClass(AOL%, "_AOL_Image")
+	Q% = ShowWindow(X%, SW_MINIMIZE)
+	Q% = ShowWindow(X%, SW_HIDE)
+Else
+	X% = FindChildByClass(AOL%, "_AOL_Image")
+			If X% = 0 Then Exit Sub
+	Command1.Caption = "Kill Adver."
+	AOL% = FindWindow("AOL Frame25", 0&)
+	X% = FindChildByClass(AOL%, "_AOL_Image")
+	Q% = ShowWindow(X%, SW_NORMAL)
+End If

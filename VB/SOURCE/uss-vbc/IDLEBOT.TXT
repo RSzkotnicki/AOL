@@ -1,0 +1,14 @@
+Visual Basic Source Code...Idle Bot
+What to do...
+
+Make one (1) Timer and set the interval to 100
+
+In that Timer type the following code (or copy paste)...
+Dim AOL%, E%, J%, P%
+AOL% = FindWindow("AOL Frame25", 0&)
+E% = FindWindow("_AOL_Modal", "")
+P% = FindChildByTitle(E%, "No")
+If P% <> 0 Then Exit Sub
+J% = FindChildByTitle(E%, "Yes")
+pause (.5)
+AOLClick (J%)

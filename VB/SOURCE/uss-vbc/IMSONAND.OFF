@@ -1,0 +1,20 @@
+Im on\Off
+make 1 command button in it copy and paste:(Make captiion im off) 
+
+
+
+if command1.caption = "im on" then call sendimon 
+
+command1.caption ="im off" 
+
+if command1.caption = "im off"then 
+
+Call Sendimoff 
+
+command1.caption =" im on" 
+
+
+
+
+
+this is for master2.bas 

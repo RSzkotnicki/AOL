@@ -1,0 +1,456 @@
+Title: Making A AOL Scroller
+Notes: In order to continue, you must know that there is two spaces between the words America
+& Online.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make 3 text boxes ( Text1, Text2, Text3 )
+---------------Make a command button ( Command1 )
+Code:
+-------Object: Command1
+-------Proc: Click
+AppActivate "America  Online"
+SendKeys Text1.Text
+SendKeys "{enter}"
+SendKeys Text2.Text
+SendKeys "{enter}"
+SendKeys Text3.Text
+SendKeys "{enter}"
+Summary: This will now scroll 3 lines of text in the America Online Chat area.
+
+Title: Making A Clock
+Notes: None.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a label ( Label1 )
+---------------Make a Timer ( Timer1 )
+---------------Set Timer1.Interval to 500
+Code:
+-------Object: Timer1
+-------Proc: Timer
+If Label1 <> Cstr(Time) Then
+Label1.Caption = Time
+End If
+Summary: When this program is run, the time from your computer will be read in the label.
+
+Title: Blinking Lights
+Notes: None.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make 2 labels ( Label1, Label2 )
+---------------Set Label1 / 2.Caption to BLINK
+---------------Set Label1 / 2.Visible to False
+---------------On Form1 put Label2 directly on top of Label1
+---------------Make 2 timers ( Timer1, Timer2 )
+---------------Set Timer1 / 2.Interval to 1000
+Code - A:
+-----------Object: Timer1
+-----------Proc: Timer
+Timer1.Enabled = False
+Timer2.Enabled = True
+Label1.Visible = False
+Label2.Visible = True
+Code - B:
+-----------Object: Timer2
+-----------Proc: Timer
+Timer1.Enabled = True
+Timer2.Enabled = False
+Label1.Visible = True
+Lable2.Visible = False
+Summary: Label1 & Label2 will keep replacing each other bringing about a blinking image.
+
+Title: Making Password Boxes
+Notes: In this example, our password will be "Password".
+Instructions:
+---------------Make 2 forms ( Form1, Form2 )
+---------------Make a text box ( Text1 )
+---------------Make a command button ( Command1 )
+---------------Set Text1.Password char to * - (optional)
+Code:
+-------Object: Command1
+-------Proc: Click
+If Text1.Text = "Password" Then
+Form1.Hide
+Form2.Show
+Else
+MsgBox "Invalid Password", 16 , "Invalid"
+End If
+Summary: When run, if you type in the word Password in the text box and click the command
+button, form1 will hide and form2 will show. If you type the password wrong, a message box will
+appear telling you that it was an invalid password.
+
+Title: Basic SendKeys Codes
+Notes: None.
+^ = Control
+{enter} = Enter
+% = Alt
+{Del} = Delete
+{ESCAPE} = Escape
+{TAB} = Tab
++ = Shift
+{BACKSPACE} = Backspace
+{BREAK} = Break
+{CAPLOCKS} = Caps Lock
+{CLEAR} = Clear
+{DELETE} = Delete
+{DOWN} = Down Arrow
+{LEFT} = Left Arrow
+{RIGHT} = Right Arrow
+{UP} = Up Arrow
+{NUMLOCK} = Num Lock
+{PGDN} = Page Down
+{PGUP} = Page Up
+{SCROLLLOCK} = Scroll Lock
+{F1} = F1 .......Use {F2} {F3} and so on for others...
+{HOME} = home
+{INSERT} = Insert
+
+Title: Message Boxes
+Notes: None.
+Instructions:
+---------------Make a new form( Form1 )
+---------------Make a command button ( Command1 )
+Code:
+-------Object: Command1
+-------Proc: Click
+MsgBox "Error", 16 , "Error"
+Summary: When the command button is clicked, a message box will appear saying Error.
+
+Title: Running Another Program Through Yours
+Notes: None.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a command button ( Command1 )
+Code:
+-------Obect: Command1
+-------Proc: Click
+RetVal = Shell("C:\WINDOWS\NAME_OF_FILE.EXE", 1)
+Summary: When you click the command button, name_of_file.exe will open which is located in the
+windows directory.
+
+Title: Posting The Days Date On A Form
+Notes: None.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a label ( Label1 )
+---------------Make a timer ( Timer1 )
+---------------Timer1.Interval = 500
+Code:
+-------Object: Timer1
+-------Proc: Timer
+If Label1 <> Cstr ( Date ) Then
+Label1.Caption = Date
+End If
+Summary: When this program is run, the date will appear in the label.
+
+Title: Don't Let A Person Leave Without A Goodbye
+Notes: None.
+Instructions:
+---------------Make a new form ( Form1 )
+Code:
+-------Object: Form
+-------Proc: QueryUnload
+MsgBox "Thanks For Using My Program", 48 , "GoodBye"
+Summary: Now, if someone clicks on the X to close a program, instead of exiting properly, they
+will still get a goodby message.
+
+Title: Have More Than 1 PW For Your Program
+Notes: For this example, our passwords will be "Password#1" & "Password#2".
+Instructions:
+---------------Make 2 forms ( Form1, Form2 )
+---------------Make a command button ( Command1 )
+---------------Make a text box ( Text1 )
+Code:
+-------Object: Command1
+-------Proc: Click
+If Text1.Text = "Password#1" Then
+Unload Form1
+Form2.Show
+ElseIf Text1.Text = "Password#2" Then
+Unload Form1
+Form2.Show
+Else
+MsgBox "The Password You Entered Was Incorrect", , "InValid"
+EndIf
+Summary: In this program, you now have the option of typing in Password#1 or Password#2 as
+your password.
+
+Title: Have The Text ForeColor Change Colors As You Type
+Notes: None.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a text box ( Text1 )
+---------------Make 5 timers ( Timer1, Timer2, Timer3, Timer4, Timer5 )
+---------------Timer1 / 2 / 3 / 4 / 5.Interval = 1000
+---------------Text1.Forecolor = Black
+Code - A:
+-----------Object: Timer1
+-----------Proc: Timer
+Timer5.Enabled = False
+Text1.ForeColor = &HC00000
+Timer2.Enabled = True
+Code - B:
+-----------Object: Timer2
+-----------Proc: Timer
+Timer1.Enabled = False
+Text1.ForeColor = &HC0&
+Timer3.Enabled = True
+Code - C:
+-----------Object: Timer3
+-----------Proc: Timer
+Timer2.Enabled = False
+Text1.ForeColor = &HC000C0
+Timer4.Enabled = True
+Code - D:
+-----------Object: Timer4
+-----------Proc: Timer
+Timer3.Enabled = False
+Text1.ForeColor = &H8000&
+Timer5.Enabled = True
+Code - E:
+-----------Object: Timer5
+-----------Proc: Timer
+Timer4.Enabled = False
+Text1.ForeColor = &H0&
+Timer1.Enabled = True
+Summary: When this program is run, the colors will change in the text box while you type!
+
+Title: Making A Prodigy And AOL Scroller Combined In One
+Notes: None.
+Instructions:
+---------------Make a new form. ( Form1 )
+---------------Make a text box ( Text1 )
+---------------Make a Command Button ( Command1 )
+Code:
+-------Object: Command1
+-------Proc: Click
+Dim ProdigyError As Variant
+On Error GoTo ProdigyError
+AppActivate "PRODIGY® service - CHAT"
+For ProdigyScroll = 1 To 5 Step 1
+SendKeys Text1.Text
+SendKeys "{enter}"
+Next ProdigyScroll
+Exit Sub
+ProdigyError:
+Dim MsgX As Variant
+Dim MsgY As Variant
+Dim MsgZ As Variant
+Dim MsgXYZ As Variant
+Dim DoubleError As Variant
+On Error GoTo DoubleError
+AppActivate "America Online"
+For AolScroll = 1 To 5 Step 1
+SendKeys Text1.Text
+SendKeys "{enter}"
+Next AolScroll
+Exit Sub
+DoubleError:
+MsgX = "You must be in AOL or Prodigy Chat for this to work!"
+MsgY = "16"
+MsgZ = "Error"
+MsgXYZ = "MsgBox( MsgX, MsgY, MsgZ )
+Resume 1
+1 End Sub
+Summary: Now, instead of making separate scrollers for each service, this one will work with them
+both. I have never tested this, but I don't see why it wouldn't work. If theres a bug just mail me.
+
+
+Title: Using 3-D Controls
+Notes: None.
+Instructions:
+---------------Make a new form. ( Form1 )
+---------------Make a text box ( Text1 )
+---------------Make a timer ( Timer1 )
+---------------Set Timer1.Interval to 1
+Code - A:
+----------Object: Module
+----------Proc: General Declarations
+Sub ThreeDControl(Ctrl As Control, nBevel%, nSpace%, bInset%)
+PixX% = Screen.TwipsPerPixelX
+PixY% = Screen.TwipsPerPixelY
+CTop% = Ctrl.Top - PixX%
+Clft% = Ctrl.Left - PixY%
+CRgt% = Ctrl.Left + Ctrl.Width
+CBtm% = Ctrl.Top + Ctrl.Height
+If bInset% Then
+For i% = nSpace% To (nBevel% + nSpace% - 1)
+AddX% = i% * PixX%
+AddY% = i% * PixY%
+Ctrl.Parent.Line (Clft% - AddX%, CTop% - AddY%)-(CRgt% + AddX%, CTop% -
+AddY%), &H808080
+Ctrl.Parent.Line (Clft% - AddX%, CTop% - AddY%)-(Clft% - AddX%, CBtm% +
+AddY%), &H808080
+Ctrl.Parent.Line (Clft% - AddX%, CBtm% + AddY%)-(CRgt% + AddX% + PixX%,
+CBtm% + AddY%), &HFFFFFF
+Ctrl.Parent.Line (CRgt% + AddX%, CTop% - AddY%)-(CRgt% + AddX%, CBtm% +
+AddY%), &HFFFFFF
+Next
+Else
+For i% = nSpace% To (nBevel% + nSpace% - 1)
+AddX% = i% * PixX%
+AddY% = i% * PixY%
+Ctrl.Parent.Line (CRgt% + AddX%, CBtm% + AddY%)-(CRgt% + AddX%, CTop% -
+AddY%), &H808080
+Ctrl.Parent.Line (CRgt% + AddX%, CBtm% + AddY%)-(Clft% - AddX%, CBtm% +
+AddY%), &H808080
+Ctrl.Parent.Line (CRgt% + AddX%, CTop% - AddY%)-(Clft% - AddX% - PixX%,
+CTop% - AddY%), &HFFFFFF
+Ctrl.Parent.Line (Clft% - AddX%, CBtm% + AddY%)-(Clft% - AddX%, CTop% -
+AddY%), &HFFFFFF
+Next
+End If
+End Sub
+Code - B:
+----------Object: Timer1
+----------Proc: Timer
+ThreeDControl Text1, 1, 0, True
+Summary: Just use the ThreeDControl Command with the objects name, then a , 1, 0, True after it!
+
+Title: Hiding The Mouse Pointer - 32Bit
+Notes: In order to show the cursor again, use: result = ShowCursor (True).
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a new module ( Module1 )
+---------------Make a timer ( Timer1 )
+---------------Timer1.Interval = 100
+Code - A:
+----------Object: Module1
+----------Proc: General Declarations
+Declare Function ShowCursor Lib "user32" Alias "ShowCursor" (ByVal bShow As
+Long) As Long
+Code - B:
+----------Object: Timer1
+----------Proc: Timer
+result = ShowCursor (False)
+Summary: When run, you will not be able to see the mouse cursor!
+
+Title: Non Case Sensitive Passwords
+Notes: None.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a command button ( Command1 )
+---------------Make a text box ( Text1 )
+Code:
+-------Object: Command1
+-------Proc: Click
+If LCase$(Text1) = "password" Then
+MsgBox "Password Accepted", 48, "Accepted!"
+Else
+MsgBox "Password Not Accepted", 16, "Not Accepted!"
+End If
+Summary: Now you can type the password in whatever cases you want and it will still work!
+
+Title: Copying Text To The ClipBoard
+Notes: None.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a command button ( Command1 )
+---------------Make a text box ( Text1 )
+Code:
+-------Object: Command1
+-------Proc: Click
+ClipBoard.SetText Text1.Text
+Summary: When you click the command button, it will copy the text in the text box to the
+clipboard
+
+Title: Scrolling Credits Screen
+Notes: Everyone is asking me how to make a credits screen, so here you go.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a label ( Label1 )
+---------------Make a timer ( Timer1 )
+---------------Label1.Caption = All the peoples names for credits
+---------------Timer1.Interval = 1
+Code:
+-------Object: Timer1
+-------Proc: Timer
+Label1.Top = Val( Label1.Top ) - 8
+Summary: When this program is run, the label with the credits on it will scroll upward on the form.
+This is about the best way to make a credits screen.
+
+
+Topic: Visual Basic
+Code #: 16
+Title: Centering A Form On The Screen
+Notes: To center a form other than Form1, just substitute in the name of the form with Form1 in the
+code.
+Instructions:
+---------------Make a new form ( Form1 )
+Code:
+-------Object: Form
+-------Proc: Load
+Form1.Move(Screen.width-form1.width)\2,(screen.height-form1.height)\2
+Summary: When you run the program, the form will be centered on the screen.
+
+Topic: Visual Basic
+Code #: 18
+Title: Playing A .WAV File - 16Bit
+Notes: None.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a new module ( Module1 )
+---------------Make a command button ( Command1 )
+Code - A:
+-----------Object: Module1
+-----------Proc: General Declarations
+Declare Function sndplaysound Lib"mmsystem.dll" (ByVal wavfile As Any,
+ByVal wflags As Integer) As Integer
+Global counter As Integer
+Code - B:
+-----------Object: Command1
+-----------Proc: Click
+i% = sndplaysound("name_of_file.wav", 1)
+Summary: When you click the command button, the name_of_file.wav will play.
+
+Topic: Visual Basic
+Code #: 30
+Title: Hiding The Mouse Pointer - 16Bit
+Notes: In order to show the cursor again, use: result = ShowCursor (True).
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a new module ( Module1 )
+---------------Make a timer ( Timer1 )
+---------------Timer1.Interval = 100
+Code - A:
+----------Object: Module1
+----------Proc: General Declarations
+Declare Function ShowCursor Lib "User" (ByVal bShow As Integer) As Integer
+Code - B:
+----------Object: Timer1
+----------Proc: Timer
+result = ShowCursor (False)
+Summary: When run, you will not be able to see the mouse cursor!
+
+Topic: Visual Basic
+Code #: 32
+Title: Copying Text To The ClipBoard
+Notes: None.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a command button ( Command1 )
+---------------Make a text box ( Text1 )
+Code:
+-------Object: Command1
+-------Proc: Click
+ClipBoard.SetText Text1.Text
+Summary: When you click the command button, it will copy the text in the text box to the
+clipboard.
+
+Topic: Visual Basic
+Code #: 35
+Title: Counting The Number Of Characters In A Text Box
+Notes: None.
+Instructions:
+---------------Make a new form ( Form1 )
+---------------Make a command button ( Command1 )
+---------------Make a label ( Label1 )
+---------------Make a textbox ( Text1 )
+Code:
+-------Object: Command1
+-------Proc: Click
+Label1.Caption = Len(Text1)
+Summary: When you click the command button, the label will tell you how many characters have
+been entered in the textbox
+
+-BlindMemory
+

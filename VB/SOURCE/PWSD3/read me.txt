@@ -1,0 +1,20 @@
+[words from bEaV]
+PWSD3.bas by bEaV
+
+k..this is my (hopefully) last version..I've fixed things..and added a few..enjoy it..
+
+Added:
+ - scan whole c drive!
+ - scan selected directory
+ - Scan 2 check if file is 4 AOL Use
+ - more codes n the bas
+
+Bugs Fixed:
+ - read/rite ini (simple error!)
+ - scan/clean win.ini
+
+Enjoy
+
+bEaV
+
+http://www.bigfoot.com/~WaxOnline
